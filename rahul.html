@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RAHUL GANDHI</title>
+</head>
+<style type="text/css">
+  .login{
+      float: left;
+      width: 1000px;
+      height: 500px;
+      top: 10%;
+      left: 10%;
+      margin: 30px;
+      box-shadow: 1px 1px 10px 2px #333;
+      border-radius:5px;
+      overflow: hidden;
+      position: absolute;
+</style>
+
+<body>
+    <div class="login">
+     <p>
+     <center>
+       <img src="https://bsmedia.business-standard.com/media-handler.php?mediaPath=https://bsmedia.business-standard.com/_media/bs/img/topic-profile/profile-images/thumb/463_463/1556102879.png&width=180">
+       <p></p>
+       <b>NAME:</b>RAHUL GANDHI
+       <p></p>
+       <b>PARTY NAME:</b>INDIAN NATIONAL CONGRESS
+       <p></p>
+  	   <b>QUALIFICATION:</b>POST GRADUATE
+  	   <p></p>
+  	   <b>EXPERIANCE:</b>16 YEARS
+  	   <p></p>
+  	  <b>ACHIEVEMENTS:</b>
+      PRADHAN MANTRI YOJANA,
+      ATAL PENSION YOJANA
+  	 </p>
+  	 <form>
+  	   <input type="button"  value="VOTE" onclick="passvalue()" />
+  	   <input type="button"  value="BACK" onclick="window.location.href='votingmachine.html'"/>
+  	 </form>
+  	 </center>
+     </div>
+  	 <script type="text/javascript">
+  	 		let count=0;
+
+        function passvalue() {
+          event.preventDefault();
+          count=+localStorage.getItem("textvalue1")+1;
+          localStorage.setItem("textvalue1",count);
+          
+          d();
+          // return false;
+
+        }
+        function d() {
+          window.location.href='mainpage.html';
+        }
+  	 </script>
+</body>
+</html>
